@@ -1,0 +1,131 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	text-align: center;
+	justify-content: center;
+}
+
+svg{
+	max-width: 100%;
+}
+
+.container{
+	padding-top: 50px;
+}
+
+#stars /*молнии*/{
+	animation: starfly 1s ease infinite;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+#hand /*рука челика внизу*/{
+	animation: hand 1s ease infinite;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+#flyman /*летящий чел*/{
+	animation: starman 0.1s ease-in-out infinite alternate;
+}
+
+#lefthand,
+#righthand /*левая рука летящего чела*/{
+	animation: boomhand 1s ease infinite;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+/*stars (lightning bolts) animation*/
+@keyframes starfly{
+	from{
+		transform: translateX(-5px);
+	}
+	to{
+		transform: translateX(5px);
+	}
+}
+
+
+/*hand of stay man*/
+@keyframes hand{
+	from{
+		transform: translateX(-5px);
+	}
+	to{
+		transform: translateX(5px);
+	}
+}
+
+
+/*fly man*/
+@keyframes starman{
+	from{
+		transform: translateX(-5px);
+	}
+	to{
+		transform: translateX(5px);
+	}
+}
+
+
+/*hands of fly man*/
+@keyframes boomhand{
+	from{
+		transform: translateX(-5px);
+	}
+	to{
+		transform: translateX(5px);
+	}
+}
+
+
+@media (max-width: 1000px){
+	svg{
+		text-align: center;
+		width: 900px;
+		height: 900px;
+		padding: 150px 20px;
+	}
+}
+
+@media (max-width: 700px){
+	svg{
+		text-align: center;
+		width: 600px;
+		height: 600px;
+		padding: 150px 20px;
+	}
+}
+
+
+@media (max-width: 400px){
+	svg{
+		text-align: center;
+		width: 300px;
+		height: 300px;
+		padding-top: 150px 20px;
+	}
+}
+
+@media (max-width: 300px){
+	svg{
+		text-align: center;
+		width: 250px;
+		height: 250px;
+		padding-top: 20px;
+	}
+}
+
+@media (max-width: 200px){
+	svg{
+		text-align: center;
+		width: 200px;
+		height: 200px;
+		padding-top: 20px;
+	}
+}
